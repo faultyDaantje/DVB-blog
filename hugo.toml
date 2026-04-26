@@ -1,0 +1,31 @@
+baseURL = 'https://DVB.github.io/'
+languageCode = 'en'
+title = "DVB Engineering Lab"
+theme = "hugo-coder"
+defaultContentLanguage = "en"
+
+[params]
+    colorScheme = "auto"
+    author = "DVB"
+    description = "3D Printing, Moped Restoration, and Engineering"
+    keywords = "blog, developer, engineer, 3dprinting"
+    info = "Engineering Student & Maker"
+    avatarURL = "images/avatar.jpg" # Place a photo in static/images/avatar.jpg
+    footercontent = "Built with Hugo"
+
+    # Social links for Coder
+    [[params.social]]
+        name = "Github"
+        icon = "fa fa-2x fa-github"
+        weight = 1
+        url = "https://github.com/Faultydaantje"
+
+# This theme uses a different menu system
+[[menu.main]]
+    name = "Blog"
+    weight = 1
+    url = "posts/"
+[[menu.main]]
+    name = "About"
+    weight = 2
+    url = "about/"
