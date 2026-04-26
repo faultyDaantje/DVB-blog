@@ -11,7 +11,7 @@ defaultContentLanguage = "en"
     keywords = "blog, developer, engineer, 3dprinting"
     info = "Engineering Student & Maker"
     avatarURL = "images/avatar.jpg" # Place a photo in static/images/avatar.jpg
-    footercontent = "Built with Hugo"
+    enableComments = true
 
     # Social links for Coder
     [[params.social]]
@@ -29,3 +29,16 @@ defaultContentLanguage = "en"
     name = "About"
     weight = 2
     url = "about/"
+
+[params.giscus]
+        repo = "faultyDaantje/DVB-blog"
+        repoId = "R_kgDOSNIm5Q"
+        category = "Announcements"
+        categoryId = "DIC_kwDOSNIm5c4C7vSF"
+        mapping = "pathname"
+        strict = "0"
+        reactionsEnabled = "1"
+        emitMetadata = "0"
+        inputPosition = "bottom"
+        theme = "preferred_color_scheme" # This matches the Coder dark/light mode
+        lang = "en"
