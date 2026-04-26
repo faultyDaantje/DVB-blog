@@ -1,0 +1,11 @@
+{{ define "content" }}
+<section class="container centered">
+  <div class="about">
+    <h1>{{ .Site.Title }}</h1>
+    <p>Welcome to the DVB Engineering Lab Interface.</p>
+    
+    {{ .Content }}
+    {{ partial "control_room_logic.html" . }}
+  </div>
+</section>
+{{ end }}

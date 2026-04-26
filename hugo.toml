@@ -1,4 +1,4 @@
-baseURL = 'https://DVB.github.io/'
+baseURL = 'https://Faultydaantje.github.io/'
 languageCode = 'en'
 title = "DVB Engineering Lab"
 theme = "hugo-coder"
@@ -24,11 +24,17 @@ defaultContentLanguage = "en"
 [[menu.main]]
     name = "Blog"
     weight = 1
-    url = "posts/"
+    url = "/posts/"
+
 [[menu.main]]
     name = "About"
     weight = 2
-    url = "about/"
+    url = "/about/"
+
+[[menu.main]]
+    name = "Gallery"
+    weight = 3
+    url = "/gallery/"
 
 [params.giscus]
         repo = "faultyDaantje/DVB-blog"
@@ -42,3 +48,8 @@ defaultContentLanguage = "en"
         inputPosition = "bottom"
         theme = "preferred_color_scheme" # This matches the Coder dark/light mode
         lang = "en"
+
+[markup]
+  [markup.goldmark]
+    [markup.goldmark.renderer]
+      unsafe = true
