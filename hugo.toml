@@ -3,6 +3,8 @@ languageCode = 'en'
 title = "DVB Engineering Lab"
 theme = "hugo-coder"
 defaultContentLanguage = "en"
+relativeURLs = true
+canonifyURLs = true
 
 [params]
     colorScheme = "auto"

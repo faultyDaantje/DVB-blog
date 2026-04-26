@@ -2,24 +2,24 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on DVB Engineering Lab</title>
-    <link>http://localhost:1313/posts/</link>
+    <link>http://localhost:1314/posts/</link>
     <description>Recent content in Posts on DVB Engineering Lab</description>
     <generator>Hugo</generator>
     <language>en</language>
     <lastBuildDate>Sun, 26 Apr 2026 18:54:50 +0200</lastBuildDate>
-    <atom:link href="http://localhost:1313/posts/index.xml" rel="self" type="application/rss+xml" />
+    <atom:link href="http://localhost:1314/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Suzuki TS50X Rebuild</title>
-      <link>http://localhost:1313/posts/suzuki/</link>
+      <link>http://localhost:1314/posts/suzuki/</link>
       <pubDate>Sun, 26 Apr 2026 18:54:50 +0200</pubDate>
-      <guid>http://localhost:1313/posts/suzuki/</guid>
+      <guid>http://localhost:1314/posts/suzuki/</guid>
       <description>&lt;p&gt;&lt;strong&gt;Project Completion:&lt;/strong&gt;&lt;/p&gt;&#xA;&lt;div style=&#34;width: 100%; background-color: #e0e0e0; border-radius: 5px;&#34;&gt;&#xA;  &lt;div style=&#34;width: 65%; background-color: #2ecc71; color: white; text-align: center; border-radius: 5px; padding: 2px 0; font-size: 12px;&#34;&gt;65%&lt;/div&gt;&#xA;&lt;/div&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://img.shields.io/badge/Status-In--Progress-orange?style=for-the-badge&amp;amp;logo=mechanical-engineering&#34; alt=&#34;Status&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;Before:&lt;/p&gt;</description>
     </item>
     <item>
       <title>My Printer</title>
-      <link>http://localhost:1313/posts/my-first-print/</link>
+      <link>http://localhost:1314/posts/my-first-print/</link>
       <pubDate>Sun, 26 Apr 2026 16:59:24 +0200</pubDate>
-      <guid>http://localhost:1313/posts/my-first-print/</guid>
+      <guid>http://localhost:1314/posts/my-first-print/</guid>
       <description>&lt;p&gt;Snapmaker U1 :)&lt;/p&gt;</description>
     </item>
   </channel>
