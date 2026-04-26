@@ -1,4 +1,4 @@
-baseURL = 'https://Faultydaantje.github.io/'
+baseURL = 'https://faultydaantje.github.io/DVB-blog/'
 languageCode = 'en'
 title = "DVB Engineering Lab"
 theme = "hugo-coder"
