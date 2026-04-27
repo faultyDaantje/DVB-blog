@@ -6,4 +6,4 @@ title = 'My Printer'
 
 Snapmaker U1 :)
 <!--more-->
-![Picture](images/printer.jpg)
+![My Printer](printer.jpg)
