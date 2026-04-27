@@ -275,6 +275,41 @@
           onmouseout="hideHud()">
     </path>
     <path class="hitbox" 
+      d="m -152.24878,102.34548 4.6641,4.28593 14.11837,3.15142 33.62566,-14.244419 -2.74173,-47.145262 -13.36203,-10.588776 -14.49654,-0.882399 -28.29528,1.764798 z" 
+      style="pointer-events: all; stroke-width: 1px; vector-effect: non-scaling-stroke;" 
+      data-link="./posts/myprinter/"
+      onmouseover="showHud('3D_PRINTER', 'UNIT: SNAPMAKER U1')"
+      onmouseout="hideHud()">
+    </path>
+    <path class="hitbox" 
+      d="m -41.06664,72.20041 -5.420445,-1.008456 2.521138,-1.764795 0.252114,-2.899307 -0.630286,-3.403536 0.630286,-1.260568 -3.907764,-10.588776 0.756341,-2.521137 2.647196,-1.008454 5.924671,-6.807071 0.504227,-1.890852 5.5465,-0.756341 1.512684,1.764797 -0.378172,2.016908 3.907764,3.907764 2.016908,1.134509 -0.252113,-3.277475 4.41199,0.252113 1.260568,12.479629 2.899309,-1.512684 0.126056,-25.589539 70.465779,0.378169 -1.638739,32.144496 -3.907763,11.471174 -3.403534,7.941582 -42.985386,-3.403536 0.756341,-5.420445 -7.563411,-1.890852 -13.109913,-1.008455 -10.714831,-0.252113 -5.672558,0.882399 z" 
+      style="pointer-events: all; stroke-width: 1px; vector-effect: non-scaling-stroke;" 
+      data-link="#"
+      onmouseover="showHud('WORKBENCH', 'UNIT: ELECTRONICS STATION')"
+      onmouseout="hideHud()">
+    </path>
+    <path class="hitbox" 
+      d="M 67.21619,118.22864 106.293814,123.0188 118.647384,101.84125 122.429087,83.184838 117.891044,46.880465 114.361452,33.518441 98.982517,32.005757 l 0.75634,5.546502 -17.143732,-2.01691 -1.375825,0.01447 4.323077,19.07503 -1.782712,23.442678 16.133553,9.180973 7.40905,6.146945 v 6.933126 L 93.814186,95.412353 65.577451,92.639101 Z" 
+      style="pointer-events: all; stroke-width: 1px; vector-effect: non-scaling-stroke;" 
+      data-link="#"
+      onmouseover="showHud('CAD_STATION', 'UNIT: SOLIDWORKS // DEV_ENVIRONMENT')"
+      onmouseout="hideHud()">
+    </path>
+    <path class="hitbox" 
+      d="m -6.51177,0.05985 -0.519521,26.7775788 48.910058,0.37817 1.008455,-28.6149046 z" 
+      style="pointer-events: all; stroke-width: 1px; vector-effect: non-scaling-stroke;" 
+      data-link="#"
+      onmouseover="showHud('CENTRAL_HUB', 'UNIT: HOME_ASSISTANT OS')"
+      onmouseout="hideHud()">
+    </path>
+    <path class="hitbox" 
+      d="m 62.01635,77.008054 c -1.44918,1.150766 -2.83628,1.985395 -2.83628,1.985395 -0.04353,3.666157 5.949909,4.212319 10.305149,4.947729 l 13.99231,-2.395079 2.33205,-1.008454 -3.97079,-2.521138 -1.071483,-4.475017 -2.016911,-3.65565 -3.970789,-2.016908 -2.521138,-0.189085 -3.907761,0.567254 -2.079937,0.378171 -2.395083,1.953882 -1.323596,1.071483 c 0,0 0.893093,4.222807 -0.535741,5.357417 z" 
+      style="pointer-events: all; stroke-width: 1px; vector-effect: non-scaling-stroke;" 
+      data-link="#"
+      onmouseover="showHud('GEAR_STOWAGE', 'UNIT: STRUCTURAL FF HELMET')"
+      onmouseout="hideHud()">
+    </path>
+    <path class="hitbox" 
       d="m -94.929472,45.72659 8.467889,-0.846788 0.534813,12.52356 -8.155911,1.960983 z" 
       style="pointer-events: all;" 
       onclick="toggleDarkMode()"
@@ -294,36 +329,44 @@
     hSub.innerText = s;
     hud.style.opacity = '1';
   }
+  
   function hideHud() { hud.style.opacity = '0'; }
 
+  
   function toggleDarkMode() {
-    
     const isDark = document.body.classList.contains('colorscheme-dark') || 
                    document.body.classList.contains('dark-mode');
-    
-    if (isDark) {
-        document.body.classList.remove('colorscheme-dark', 'dark-mode');
-    } else {
-        document.body.classList.add('colorscheme-dark'); 
-    }
+    document.body.classList.toggle('colorscheme-dark', !isDark);
   }
+
+  
+  document.querySelector('.lab-overlay').addEventListener('click', function(e) {
+    const target = e.target.closest('.hitbox');
+    if (!target) return;
+
+    const link = target.getAttribute('data-link');
+    
+    if (link === "#") {
+      showHud('ACCESS DENIED', 'DATA LOG OFFLINE');
+      setTimeout(hideHud, 1500);
+    } else if (link) {
+      window.location.href = link;
+    }
+  });
+
   function triggerScan() {
     const hitboxes = document.querySelectorAll('.hitbox');
     const btn = document.getElementById('scan-btn');
-    
-    
     btn.disabled = true;
     btn.innerText = "Scanning...";
 
     hitboxes.forEach(path => {
-        path.classList.add('reveal-active');
-        
-        
-        setTimeout(() => {
-            path.classList.remove('reveal-active');
-            btn.disabled = false;
-            btn.innerText = "Execute Area Scan";
-        }, 1500);
+      path.classList.add('reveal-active');
+      setTimeout(() => {
+        path.classList.remove('reveal-active');
+        btn.disabled = false;
+        btn.innerText = "Execute Area Scan";
+      }, 1500);
     });
   }
 </script>
