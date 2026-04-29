@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REPO: SUZUKI-TS50X on DVB Engineering Lab</title>
+    <link>http://localhost:1313/changelog/suzuki/</link>
+    <description>Recent content in REPO: SUZUKI-TS50X on DVB Engineering Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/changelog/suzuki/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/changelog/suzuki/introduction/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/suzuki/introduction/</guid>
+      <description>&lt;p&gt;Last year I bought a suzuki TS50X, since then I have almost finished a full rebuild of the engine, and I&amp;rsquo;ve started on making all the parts ready for repainting/powder coating (depends on the price).&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Images:&lt;/strong&gt;&#xA;&lt;img src=&#34;suzukivoor.jpeg&#34; alt=&#34;Suzuki2025&#34;&gt;&#xA;&lt;img src=&#34;suzukizij.jpeg&#34; alt=&#34;Suzukizij&#34;&gt;&#xA;&lt;img src=&#34;enginerebuild.jpeg&#34; alt=&#34;enginerebuild&#34;&gt;&#xA;&lt;img src=&#34;suzukinaked.jpeg&#34; alt=&#34;suzukinaked&#34;&gt;&#xA;&lt;img src=&#34;tellerunit.jpeg&#34; alt=&#34;tellerunit&#34;&gt;&#xA;&lt;img src=&#34;suzukiframe.jpeg&#34; alt=&#34;suzukiframe&#34;&gt;&#xA;&lt;img src=&#34;paintedcylinder.jpeg&#34; alt=&#34;paintedcyilinder&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/changelog/suzuki/&#34; &gt; BACK TO REPO &lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

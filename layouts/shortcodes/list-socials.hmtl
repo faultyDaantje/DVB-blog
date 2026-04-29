@@ -1,0 +1,7 @@
+{{ range .Site.Params.social }}
+<a href="{{ .url | safeURL }}" class="social-row" target="_blank" rel="noopener">
+    <i class="{{ .icon }}"></i>
+    <span class="social-name">{{ .name | upper }}</span>
+    <span class="social-link">{{ .url }}</span>
+</a>
+{{ end }}

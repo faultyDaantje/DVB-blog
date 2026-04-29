@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>REPO: SNAPMAKER U1 on DVB Engineering Lab</title>
+    <link>http://localhost:1313/changelog/3dprinter/</link>
+    <description>Recent content in REPO: SNAPMAKER U1 on DVB Engineering Lab</description>
+    <generator>Hugo</generator>
+    <language>en</language>
+    <lastBuildDate>Wed, 29 Apr 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="http://localhost:1313/changelog/3dprinter/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction</title>
+      <link>http://localhost:1313/changelog/3dprinter/introduction/</link>
+      <pubDate>Wed, 29 Apr 2026 00:00:00 +0000</pubDate>
+      <guid>http://localhost:1313/changelog/3dprinter/introduction/</guid>
+      <description>&lt;p&gt;I have a snapmaker U1 to which I have made some upgrades already.&#xA;Current upgrades:&#xA;-Top hat by shrin&#xA;-Snapmaker U1 Toolbox&#xA;-Hula anti vibration feet&#xA;-Auxilary fan cover&#xA;Models can be found on makerworld.&lt;/p&gt;&#xA;&lt;p&gt;&lt;strong&gt;Images:&lt;/strong&gt;&#xA;&lt;img src=&#34;printertop.jpeg&#34; alt=&#34;tophat&#34;&gt;&#xA;&lt;img src=&#34;toolbox.jpeg&#34; alt=&#34;toolbox&#34;&gt;&lt;/p&gt;&#xA;&lt;hr&gt;&#xA;&lt;p&gt;&lt;a href=&#34;http://localhost:1313/changelog/suzuki/&#34; &gt; BACK TO REPO &lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

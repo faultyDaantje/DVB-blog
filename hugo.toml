@@ -19,21 +19,39 @@ defaultContentLanguage = "en"
         icon = "fa fa-2x fa-github"
         weight = 1
         url = "https://github.com/Faultydaantje"
+        # YouTube Link
+    [[params.social]]
+        name = "YouTube"
+        icon = "fa fa-2x fa-youtube"
+        weight = 2
+        url = "https://www.youtube.com/@DVB2007"
+
+    # MakerWorld Link
+    [[params.social]]
+        name = "MakerWorld"
+        icon = "fa fa-2x fa-cube" # Using a cube icon to represent 3D models
+        weight = 3
+        url = "https://makerworld.com/en/@danivbel"
 
 # This theme uses a different menu system
 [[menu.main]]
-    name = "Blog"
+    name = "BLOG"
     weight = 1
     url = "/posts/"
 
 [[menu.main]]
-    name = "About"
+    name = "SYSTEM_LOG"
+    url = "/changelog/"
     weight = 2
+
+[[menu.main]]
+    name = "ABOUT"
+    weight = 3
     url = "/about/"
 
 [[menu.main]]
-    name = "Gallery"
-    weight = 3
+    name = "GALLERY"
+    weight = 4
     url = "/gallery/"
 
 [params.giscus]

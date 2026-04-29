@@ -13,7 +13,7 @@
 </style>
 
 <div class="gallery-grid">
-  {{ $images := .Page.Resources.ByType "image" }}
+  {{ $images := sort (.Page.Resources.ByType "image") "Name" "desc" }}
   {{ range $index, $element := $images }}
     <div class="gallery-item">
       <img src="{{ .RelPermalink }}" onclick="openLightbox({{ $index }})" alt="Project Image" class="lab-img">
